@@ -2,11 +2,11 @@ package com.codecool.simpleSQLapplication.controller;
 
 import com.codecool.simpleSQLapplication.model.Applicant;
 
-public class Query {
+public class Handle {
     int answer;
     private MentorController mentorController;
     private ApplicantController applicantController;
-    public Query(int answer){
+    public Handle(int answer){
         mentorController = new MentorController();
         applicantController = new ApplicantController();
         this.answer = answer;

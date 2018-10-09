@@ -49,17 +49,17 @@ public class MentorDao implements DAO{
     }
 
     @Override
-    public void addRecord() {
-
-    }
-
-    @Override
     public void updateRecord() {
 
     }
 
     @Override
     public void deleteRecord() {
+
+    }
+
+    @Override
+    public void insertRecord() {
 
     }
 }

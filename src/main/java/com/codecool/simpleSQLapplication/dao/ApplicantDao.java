@@ -1,6 +1,5 @@
 package com.codecool.simpleSQLapplication.dao;
 
-import com.codecool.simpleSQLapplication.App;
 import com.google.common.collect.Lists;
 import com.codecool.simpleSQLapplication.model.Applicant;
 import java.sql.Connection;
@@ -79,13 +78,6 @@ public class ApplicantDao implements DAO {
         }
     }
 
-
-
-    @Override
-    public void addRecord() {
-
-    }
-
     @Override
     public void updateRecord() {
 
@@ -93,6 +85,11 @@ public class ApplicantDao implements DAO {
 
     @Override
     public void deleteRecord() {
+
+    }
+
+    @Override
+    public void insertRecord() {
 
     }
 

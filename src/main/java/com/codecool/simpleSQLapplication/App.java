@@ -1,6 +1,6 @@
 package com.codecool.simpleSQLapplication;
 
-import com.codecool.simpleSQLapplication.controller.Query;
+import com.codecool.simpleSQLapplication.controller.Handle;
 import com.codecool.simpleSQLapplication.view.MenuView;
 import java.util.Scanner;
 
@@ -14,14 +14,10 @@ public class App {
         while (true) {
             printer.displayMenu();
             if (userInput.hasNext()) {
-//                try {
                     String input = userInput.nextLine();
-//                } catch (wyjatek ex){
-//
-//                }
                 int answer = Integer.parseInt(input);
-                Query query = new Query(answer);
-                query.handleQuery();
+                Handle handler = new Handle(answer);
+                handler.handleQuery();
             }
         }
     }
